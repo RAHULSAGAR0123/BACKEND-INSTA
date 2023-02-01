@@ -2,7 +2,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const Post = require('./models/posts')
 const path = require("path")
-const cors = require("cors")
+const cors = require("cors") 
+const port = 8090 || process.env.PORT
 const fileUpload = require("express-fileupload")
 const url = `mongodb+srv://Manikanta:Manikanta@cluster0.sptxrlw.mongodb.net/?retryWrites=true&w=majority`
 const app = express()
